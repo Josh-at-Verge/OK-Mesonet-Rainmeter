@@ -1,0 +1,7 @@
+Mesonet Dark 1.0.0
+
+Passed: 13 validation groups covering all five official widget URL forms and published dimensions, no wrapper overflow, dark/original controls, keyboard use, reload, input fallback, refresh timing, offline/reconnect behavior, JavaScript errors, INI/include consistency, RMSKIN footer and archive integrity, launch target, plugin license and matching PE architectures, and manual ZIP integrity.
+
+Browser tests used labeled local fixtures in place of Mesonet responses. Live Mesonet rendering and Windows/Rainmeter execution were not tested.
+
+WebView2 v1.0.0 plugin DLLs are unchanged from the official release. Upstream ZIP SHA-256: f1b207eb61cfd3487cab39be3b176310af464104eb9f385357617b4fbf23e80c

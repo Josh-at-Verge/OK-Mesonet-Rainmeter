@@ -1,0 +1,17 @@
+/* The filter applies to the iframe itself, across the origin boundary. */
+:root { color-scheme:dark; font-family:"Segoe UI",sans-serif; font-size:11px; background:#111720; color:#dce6f0; }
+* { box-sizing:border-box; }
+html,body { margin:0; width:100%; overflow:hidden; }
+body { background:#111720; }
+.toolbar { height:40px; display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.station { color:#58d9be; font-weight:700; letter-spacing:1.6px; padding-left:2px; }
+.actions { display:flex; gap:5px; }
+button { font:inherit; font-weight:600; color:#dce6f0; background:#1c2734; border:1px solid #344456; border-radius:5px; padding:5px 9px; cursor:pointer; }
+button:hover { background:#29394a; }
+button:focus-visible { outline:2px solid #58d9be; outline-offset:2px; }
+button[aria-pressed="true"] { color:#70e1c8; border-color:#386b63; background:#18332f; }
+#viewport { position:relative; width:100%; background:#18212b; overflow:hidden; border-radius:6px; }
+iframe { display:block; width:100%; border:0; background:white; color-scheme:light; }
+body.dark iframe { filter:invert(.92) hue-rotate(180deg); }
+footer { height:56px; display:flex; flex-direction:column; justify-content:center; gap:4px; color:#9baec1; font-size:10px; white-space:nowrap; }
+#status { color:#bed0df; }

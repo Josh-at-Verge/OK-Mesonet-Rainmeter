@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Mesonet Dark</title>
+  <link rel="stylesheet" href="widget.css">
+  <script src="widget.js" defer></script>
+</head>
+<body>
+  <div class="toolbar" aria-label="Widget controls">
+    <span class="station" id="station">NRMN</span>
+    <div class="actions">
+      <button id="theme" type="button" aria-pressed="true" title="Dark filter changes image and chart colors. Toggle for original colors.">Dark</button>
+      <button id="reload" type="button" title="Reload from Mesonet">Reload</button>
+    </div>
+  </div>
+  <main id="viewport">
+    <iframe id="widget" title="Oklahoma Mesonet weather widget"
+      sandbox="allow-scripts allow-same-origin allow-forms"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </main>
+  <footer>
+    <span id="status" role="status" aria-live="polite">Preparing widget...</span>
+    <span>Oklahoma Mesonet · Check observation time</span>
+  </footer>
+</body>
+</html>

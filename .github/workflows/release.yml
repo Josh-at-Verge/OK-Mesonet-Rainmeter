@@ -1,0 +1,33 @@
+name: Publish Rainmeter downloads
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'downloads/**'
+      - '.github/workflows/release.yml'
+      - 'RELEASE_NOTES.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-v1.0.0
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify download checksums
+        working-directory: downloads
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Publish release if it does not already exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          if gh release view v1.0.0 >/dev/null 2>&1; then
+            echo 'Release v1.0.0 already exists; preserving its assets.'
+          else
+            gh release create v1.0.0 --target "$GITHUB_SHA" --title 'Mesonet Dark 1.0.0' --notes-file RELEASE_NOTES.md downloads/MesonetDark-1.0.0.rmskin downloads/MesonetDark-1.0.0.zip downloads/SHA256SUMS.txt downloads/Validation.txt
+          fi
