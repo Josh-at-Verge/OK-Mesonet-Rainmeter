@@ -4,8 +4,8 @@ Five official Oklahoma Mesonet widgets for your Windows desktop, with dark styli
 
 ## Download
 
-- **[Download the Rainmeter installer (.rmskin)](https://github.com/Josh-at-Verge/OK-Mesonet-Rainmeter/raw/refs/heads/main/downloads/MesonetDark-1.0.0.rmskin)**
-- [Download the manual-install ZIP](https://github.com/Josh-at-Verge/OK-Mesonet-Rainmeter/raw/refs/heads/main/downloads/MesonetDark-1.0.0.zip)
+- **[Download the Rainmeter installer (.rmskin)](https://github.com/Josh-at-Verge/OK-Mesonet-Rainmeter/releases/download/v1.0.0/MesonetDark-1.0.0.rmskin)**
+- [Download the manual-install ZIP](https://github.com/Josh-at-Verge/OK-Mesonet-Rainmeter/releases/download/v1.0.0/MesonetDark-1.0.0.zip)
 - [Checksums](downloads/SHA256SUMS.txt)
 - [GitHub Releases](https://github.com/Josh-at-Verge/OK-Mesonet-Rainmeter/releases)
 
